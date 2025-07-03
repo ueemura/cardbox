@@ -15,6 +15,7 @@ public class CardServiceImpl implements CardService{
 
     @Override
     public String createCard(CardRequest request) {
+        cardValidator.validate(request);
         return "";
     }
 }
